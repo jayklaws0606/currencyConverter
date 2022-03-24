@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./converter.css" />
+  </head>
+
+  <body>
+    <header>
+      <h3>JellyFish Currency Converter</h3>
+    </header>
+    <main>
+      <div id="container">
+        <div class="amountcontainer">
+          <label for="">Amount</label>
+          <input type="number" min="0" name="amount" id="amount" />
+        </div>
+        <br />
+        <div class="sectionConverter">
+          <div class="currencyonhand">
+            <label for="">Currency On hand:</label>
+            <label for="" class="custom-select1">
+              <select name="from" id="from">
+                <option value="default">--Please select--</option>
+                <option value="EUR">Euro</option>
+                <option value="USD">US Dollars</option>
+                <option value="CAD">Canadian Dollars</option>
+                <option value="BTC">Bitcoin Digital Currency</option>
+                <option value="ETH">Ethereum Digital Currency</option>
+              </select>
+            </label>
+          </div>
+          <br />
+          <div class="convertto">
+            <label for="">Convert to: </label>
+            <label for="" class="custom-select1">
+              <select name="to" id="to">
+                <option value="default">--Please select--</option>
+                <option value="EUR">Euro</option>
+                <option value="USD">US Dollars</option>
+                <option value="CAD">Canadian Dollars</option>
+                <option value="BTC">Bitcoin Digital Currency</option>
+                <option value="ETH">Ethereum Digital Currency</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <br />
+        <div id="conversion"></div>
+        <button class="convert" onclick="Convert();">Convert</button>
+        <!--<button class="convert" type="submit">Convert</button>
+        this is for currency.js -->
+        <!-- reset button -->
+        <button onclick="clearVal()">Reset</button>
+      </div>
+    </main>
+    <footer>Copyright Jay Nguyen</footer>
+    <script src="./converter.js"></script>
+  </body>
+</html>

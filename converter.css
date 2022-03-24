@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Poppins";
+  font-size: large;
+}
+body {
+  background: linear-gradient(
+      rgba(128, 128, 128, 0.151),
+      rgba(128, 128, 128, 0.096),
+      rgba(128, 128, 128, 0.062)
+    ),
+    url(./background/joel-filipe-_AjqGGafofE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header,
+footer {
+  margin-top: 100px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(253, 253, 253);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: rgba(8, 43, 56, 0.747);
+  border: 2px solid rgba(15, 168, 224, 0.747);
+  color: antiquewhite;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: 400px;
+  border-radius: 50px;
+}
+#container .amountcontainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#container .currencyonhand {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 20px;
+}
+#container .convertto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  position: relative;
+}
+#container .sectionConverter {
+  display: flex;
+  flex-direction: row;
+}
+input {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.212);
+  color: white;
+  transition: 0.8s;
+}
+.custom-select1 select {
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+}
+.custom-select2 select {
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+}
+input:hover {
+  background-color: rgba(15, 54, 90, 0.986);
+  border: 1px solid;
+  transform: translateX(5px);
+}
+
+button {
+  border-radius: 15px;
+  padding: 10px;
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: bold;
+  margin-top: 25px;
+  transition: 0.5s;
+}
+
+button:hover {
+  color: white;
+  background-color: rgba(15, 54, 90, 0.986);
+}
