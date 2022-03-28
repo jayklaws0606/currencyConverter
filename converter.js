@@ -42,18 +42,16 @@ function Convert() {
     convertList.push(newObj);
   }
   //get selected options
-  let fromSelected = document.getElementById("from");
-  let fromValue = fromSelected.options[fromSelected.selectedIndex].value;
+  let fromSelected = document.getElementById("from").value;
 
-  let toSelected = document.getElementById("to");
-  let toValue = toSelected.options[toSelected.selectedIndex].value;
+  let toSelected = document.getElementById("to").value;
 
   for (let index = 0; index < convertList.length; index++) {
     //validate duplicating option values
-    if (fromValue != toValue) {
+    if (fromSelected != toSelected) {
       if (
-        fromValue === convertList[index].fromCurrency &&
-        toValue === convertList[index].toCurrency
+        fromSelected === convertList[index].fromCurrency &&
+        toSelected === convertList[index].toCurrency
       ) {
         document.getElementById(
           "conversion"
